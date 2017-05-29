@@ -25,7 +25,9 @@ object Dependencies {
     "com.typesafe.akka" %% "akka-stream" % Versions.akka,
     "com.typesafe.akka" %% "akka-http" % Versions.akkaHttp,
     "com.typesafe.akka" %% "akka-http-spray-json" % Versions.akkaHttp,
-    "org.slf4j" % "slf4j-simple" % "1.7.23"
+    "org.slf4j" % "slf4j-simple" % "1.7.23",
+    "com.lightbend.akka" %% "akka-stream-alpakka-awslambda" % "0.9",
+    "com.lightbend.akka" %% "akka-stream-alpakka-sns" % "0.9"
   )
 
   def allLibs(scalaVersion: String) = mainLibs(scalaVersion) ++ testLibs
